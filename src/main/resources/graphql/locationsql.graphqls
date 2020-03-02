@@ -1,0 +1,17 @@
+type Locations {
+	id: ID!,
+	city: String,
+	country: String,
+	code: String,
+	latitude: String,
+	longitude: String
+}
+
+type Query {
+	locations(count: Int):[Locations]
+	location(id: ID):Locations
+}
+
+type Mutation {
+	createLocations(city: String!, country: String!, code: String!, latitude: String, longitude: String):Locations
+}
