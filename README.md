@@ -6,8 +6,10 @@ You need to install JDK 8
 ```bash
 sudo apt install openjdk-8-jdk
 ```
-You must also have Postgresql installed and create a Database with the name `gqldb`. The username and password shoud be 
+You must also have Postgresql installed and create a Database with the name `gqldb` and run the migration `/spring-boot-graphql-example/src/main/resources/db/migrate.sql`. The username and password shoud be 
 `postgres`. You can change this in `/spring-boot-graphql-example/src/main/resources/application.properties`  
+
+/spring-boot-graphql-example/src/main/resources/db/migrate.sql
 
 Run the spring boot application.
 ```bash
